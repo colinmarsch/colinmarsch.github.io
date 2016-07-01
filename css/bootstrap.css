@@ -6772,6 +6772,10 @@ button.close {
 	border: 1px solid white;
 	background-color: rgba(227,220,227,0.2);
 }
+
+#page1 h1 {
+	font-size: 6em;
+}
 #title{
 	font-family: 'Lobster', cursive; 
 	color: white;
