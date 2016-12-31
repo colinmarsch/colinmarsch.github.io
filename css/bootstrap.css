@@ -6792,7 +6792,7 @@ button.close {
 	font-family: 'Merriweather', serif;
 }
 #page3 {
-	height:750px;
+	height:1125px;
 	font-family: 'Merriweather', serif;
 }
 #project1 {
@@ -6803,6 +6803,10 @@ button.close {
 	padding-top:50px;
 	padding-bottom:50px;
 	background-color:#e6e6ff;
+}
+#project3 {
+	padding-top:50px;
+	padding-bottom:50px;
 }
 #page3 p {
 	margin:0 75px 10px;
