@@ -1,6 +1,6 @@
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -60,7 +60,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  margin: 10px 0;
+  margin: .67em 0;
   font-size: 2em;
 }
 mark {
@@ -93,11 +93,7 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  height: 3px;
-  width:3%;
-  background-color:#266783;
-  color:#266783;
-  border:0 none;
+  height: 0;
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
@@ -1101,16 +1097,15 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #266783;
+  color: #337ab7;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: black;
+  color: #23527c;
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1188,8 +1183,10 @@ h6,
 .h4,
 .h5,
 .h6 {
+  font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
+  color: inherit;
 }
 h1 small,
 h2 small,
@@ -1225,7 +1222,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 h1 small,
@@ -1290,9 +1287,7 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 300px 10px;
-  font-size: 16px;
-  font-family: 'Merriweather', serif;
+  margin: 0 0 10px;
 }
 .lead {
   margin-bottom: 20px;
@@ -2541,7 +2536,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3033,7 +3027,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3995,6 +3988,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
+  background-color: #eee;
 }
 .nav > li.disabled > a {
   color: #777;
@@ -4173,12 +4167,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  background-color: white;
-  border: 1px solid #E3DCE3;
+  border: 1px solid transparent;
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 1px;
+    border-radius: 4px;
   }
 }
 @media (min-width: 768px) {
@@ -4500,24 +4493,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: white;
-  border-color: #E3DCE3;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
+  color: #777;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: black;
+  color: #5e5e5e;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
+  color: #777;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -6762,65 +6753,5 @@ button.close {
   .hidden-print {
     display: none !important;
   }
-}
-#page1 {
-	padding-top:175px;
-	height:700px;
-	background-image:url('../img/background.png');
-}
-#page1 i {
-	border: 1px solid white;
-	background-color: rgba(227,220,227,0.2);
-}
-
-#page1 h1 {
-	font-size: 6em;
-}
-#title{
-	font-family: 'Lobster', cursive; 
-	color: white;
-    text-shadow: 2px 2px 2px black;
-}
-#pic{
-	border:3px solid white;
-}
-#page2 {
-	padding-top:75px;
-	padding-bottom:75px;
-	height:350px;
-	background-color:#e6e6ff;
-	font-family: 'Merriweather', serif;
-}
-#page3 {
-	height:1125px;
-	font-family: 'Merriweather', serif;
-}
-#project1 {
-	padding-top:50px;
-	padding-bottom:50px;
-}
-#project2 {
-	padding-top:50px;
-	padding-bottom:50px;
-	background-color:#e6e6ff;
-}
-#project3 {
-	padding-top:50px;
-	padding-bottom:50px;
-}
-#page3 p {
-	margin:0 75px 10px;
-}
-#page4 {
-	height:450px;
-	padding-top:150px;
-	padding-bottom:75px;
-	font-family: 'Merriweather', serif;
-}
-#page4 p {
-	margin:0 0 10px;
-}
-footer p{
-	margin:0 50px 10px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
