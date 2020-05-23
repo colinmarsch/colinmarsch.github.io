@@ -11,8 +11,14 @@ $(document).ready(function() {
     }, function() {
       $("#info").css('visibility', 'hidden');
     });
+    $("#twitter").hover(function() {
+      $("#info").text('Follow me on Twitter!');
+      $("#info").css('visibility', 'visible');
+    }, function() {
+      $("#info").css('visibility', 'hidden');
+    });
     $("#linkedin").hover(function() {
-      $("#info").text('Visit me on LinkedIn!');
+      $("#info").text('Connect with me on LinkedIn!');
       $("#info").css('visibility', 'visible');
     }, function() {
       $("#info").css('visibility', 'hidden');
