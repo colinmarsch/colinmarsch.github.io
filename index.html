@@ -1,42 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Colin Marsch</title>
-    <meta name="description" content="I'm a Computer Science student at the
-    University of Waterloo. Currently looking for new grad software engineering opportunities for 2021. ">
-    <meta name="author" content="Colin Marsch">
-    <script src="https://use.fontawesome.com/1bd69f7a0e.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div>
-          <h1>Colin <span class="lastName">Marsch</span></h1>
-          <h4>Leader - Developer - Student</h4>
-        </div>
-        <div class="icons">
-          <a href="http://colinmarsch.me/resume.pdf" target="_blank"
-            <i id="resume" class="fa fa-file fa-2x" aria-hidden="true"></i></a>
-          <a href="https://github.com/colinmarsch" target="_blank"
-            <i id="github" class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-          <a href="https://www.twitter.com/colinmarsch" target="_blank"
-            <i id="twitter" class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/colinmarsch/" target="_blank"
-            <i id="linkedin" class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-          <a href="mailto:cjpmarsc@edu.uwaterloo.ca" target="_blank"
-            <i id="email" class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
-        </div>
-        <h4 id="info">Welcome to my website!</h4>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/page.js"></script>
-  </body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ site.url }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.url }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.url }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
