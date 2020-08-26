@@ -10,7 +10,7 @@ title:            Colin Marsch
 tagline:          'Android Developer'
 description:      ''
 url:              https://colinmarsch.me
-baseurl:          /
+baseurl:          https://colinmarsch.me/
 
 author:
   name:           'Colin Marsch'
