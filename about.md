@@ -9,6 +9,6 @@ This fall I am interning at [Square](https://squareup.com) working on [Cash App]
 
 Through these internships I have built a passion for Android development. I hope to be able to further my skills and build impactful products to improve people's lives.
 
-In my free time, I like to travel and explore the world (pre-covid, that is), read and take pictures. As well, I am always practicing to make the perfect cup of coffee.
+In my free time, I like to travel and explore the world (pre-covid, that is), read and [take pictures](https://www.instagram.com/marschcolin/). As well, I am always practicing to make the perfect cup of coffee.
 
 If you want to get in touch, feel free to reach out [@colinmarsch](https://twitter.com/colinmarsch)!
