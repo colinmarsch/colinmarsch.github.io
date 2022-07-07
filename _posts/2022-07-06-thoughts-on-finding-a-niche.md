@@ -8,7 +8,7 @@ development. When I was starting university and thinking about what I would like
 on during my internships, I had planned to try out different tech stacks to get a feel for 
 what I enjoyed working with the most, as that was the advice I had often heard from upper year 
 students and people working in the industry. Once I discovered my strong interest in Android 
-development however, contrary to popular advice, I changed paths to place [directed] my 
+development however, contrary to popular advice, I changed paths to direct my 
 focus there and it's a decision that I haven't regretted since. In this blog post I want to 
 share some of the unique benefits I've found that finding a niche in software engineering
 early on gave me in my career.
@@ -26,7 +26,7 @@ to be better able to communicate technical challenges I was facing and offer ide
 clearly to my teammates. Focusing on Android development helped
 me a lot in this area as I was able to build up my knowledge and courage to become more 
 comfortable asking questions and speaking up in meetings. I 
-found that when I was just starting out in an area I found it much harder to figure out what 
+found that when I was just starting out in an area, I found it much harder to figure out what 
 questions I even have, much less figure out how to clearly communicate them to others. Having 
 more depth of experience in Android development has allowed me to ask deeper questions
 and learn the reasons behind some technical decisions that I don't think I would have been able 
@@ -45,7 +45,7 @@ integrations and the testing and reliability complexities that can create.
 
 The larger scope that these projects came with resulted in many benefits from diving deeper 
 into the technical details of internal frameworks to meeting new people outside of my team and
-expanding my network. Without a strong foundation in Android development I believe I would have 
+expanding my network. Without a strong foundation in Android development, I believe I would have 
 had a much harder time being able to keep up in these larger projects and deliver the same level 
 of impact that I was able to achieve in the length of an internship.
 
