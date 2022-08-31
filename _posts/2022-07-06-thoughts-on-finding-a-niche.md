@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Thoughts on Finding an Early Career Niche
-tags: android internship new-grad
+tags: android internship new-grad career
 ---
 Of the six internships that I completed during my undergrad, five were focused on Android 
 development. When I was starting university and thinking about what I would like to work 
