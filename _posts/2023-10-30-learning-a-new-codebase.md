@@ -4,7 +4,7 @@ title: Learning a New Codebase
 tags: new-grad career internship
 ---
 
-In June of this year I gave a talk at Droidcon SF titled ["Navigating the Unknown: Tips for Efficiently Learning a New Codebase"](https://colinmarsch.me/talks.md#Droidcon%20SF%202023). This is the (long overdue) blog post
+In June of this year I gave a talk at Droidcon SF titled ["Navigating the Unknown: Tips for Efficiently Learning a New Codebase"](https://colinmarsch.me/talks#droidcon-sf-2023). This is the (long overdue) blog post
 version of that talk. I'm going to walk through my approach for diving into a new codebase and then cover some next steps that I've found help me after I have
 developed a good grasp of the codebase I am working in. Just a small note before jumping in: by "codebase" I'm generally referring to any logical area that a 
 single team might own in a large tech company. If you work on a smaller project, this could mean the codebase in it's entirety, but it doesn't have to.
