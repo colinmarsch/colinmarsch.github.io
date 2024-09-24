@@ -7,7 +7,7 @@ title: Talks
 
 09-19 - **Unpacking Compose Multiplatform Accessibility** - Droidcon NYC (Video, [Slides](https://speakerdeck.com/cmarsch/droidcon-nyc-2024-unpacking-compose-multiplatform-accessibility))
 
-09-11 - **Unpacking Compose Multiplatform Accessibility** - GDG Seattle
+09-11 - **Unpacking Compose Multiplatform Accessibility** - GDG Seattle ([Video](https://www.youtube.com/watch?v=wSr-fQA12PY))
 
 07-30 - **Unpacking Compose Multiplatform Accessibility** - Android Worldwide ([Video](https://www.youtube.com/watch?v=kRekYKQwa4w&list=PLjQD4n5Df70GJg3ljMDhDtFTbdQgjPsm0&index=14), [Slides](https://speakerdeck.com/cmarsch/android-worldwide-july-2024-unpacking-compose-multiplatform-accessibility))
 
