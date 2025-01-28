@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Becoming a Better Mentee
-tags: career
+tags: career new-grad internship
 ---
 
 Mentorship is an essential part of career development that offers valuable benefits for both mentors and mentees, making it a process everyone should participate in. While mentees typically seek growth opportunities and guidance to achieve their goals, mentorship isn’t a one-way street—mentors also learn from their mentees’ experiences and find deep reward in seeing their mentees succeed. In this blog post, I’ll share practices I’ve discovered for becoming a better mentee—techniques to enable faster learning and growth. Since the mentee’s effort is the largest factor determining the relationship’s success, these approaches will help you make the most of the opportunity.
