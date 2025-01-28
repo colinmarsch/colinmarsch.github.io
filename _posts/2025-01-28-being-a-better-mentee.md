@@ -1,0 +1,13 @@
+---
+layout: post
+title: Becoming a Better Mentee
+tags: career
+---
+
+Mentorship is an essential part of career development that offers valuable benefits for both mentors and mentees, making it a process everyone should participate in. While mentees typically seek growth opportunities and guidance to achieve their goals, mentorship isn’t a one-way street—mentors also learn from their mentees’ experiences and find deep reward in seeing their mentees succeed. In this blog post, I’ll share practices I’ve discovered for becoming a better mentee—techniques to enable faster learning and growth. Since the mentee’s effort is the largest factor determining the relationship’s success, these approaches will help you make the most of the opportunity.
+
+Since mentorship is a two-way relationship, the mentee should drive discussions forward. Taking ownership of the mentorship's direction distinguishes great mentees from passive ones who miss growth opportunities. To lead the relationship effectively, first set clear goals and share them with your mentor. This helps guide your conversations and enables your mentor to provide concrete guidance based on their insights and experiences. Clear goals might include aiming for a specific promotion (Senior Software Engineer) or giving a talk at a tech conference. Avoid vague goals like "improving technical skills." Once you've established and communicated your goals, prepare for each meeting and make progress by acting on your mentor's guidance. Without attempting their suggestions, you'll find it difficult to grow between sessions.
+
+Even with clear goals and proactive communication, you might find misalignment with your mentor's expertise. This is normal and might signal it's time to find a mentor who better matches your objectives. An ideal mentor is typically someone who's just one or two steps ahead on your chosen path. For instance, if you aim to speak at tech conferences, consider someone who recently gave their first few talks and still remembers the beginner's perspective. While a world-renowned speaker could help, they might not recall the specific challenges you're facing or have immediately actionable advice.
+
+Finally, share your successes with your mentor—let them know what worked and what didn't. Keeping them informed of your breakthroughs demonstrates how their guidance has helped you and will also strengthen your relationship significantly. While mentors often develop their own skills like communication during the relationship, their greatest reward is seeing their mentees shine and succeed!
