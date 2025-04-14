@@ -16,7 +16,7 @@ While font scaling can cause many types of unique issues in your app's UI, three
 
 ## Text clipping
 
-![ChatGPT Image Apr 13, 2025, 11_02_27 PM.png](attachment:318c7ed1-32d9-4218-9916-35e462c2ddfa:ChatGPT_Image_Apr_13_2025_11_02_27_PM.png)
+![Text Clipping Image Example](images/text_clipping.png)
 
 The first and most common issue that can occur due to font scaling is text clipping. This issue occurs when text is cutoff or truncated due to its size being increased and it running out of space to be displayed. A few situations where this issue often happens is when a text element is limited to a fixed number of lines or the text element has a fixed size.
 
@@ -24,7 +24,7 @@ Resolving this issue is usually simple on its own (e.g. increasing or removing t
 
 ## Overlapping content
 
-![ChatGPT Image Apr 13, 2025, 11_11_24 PM.png](attachment:d4291ca3-2949-4acf-82c0-ac7476ab9bce:ChatGPT_Image_Apr_13_2025_11_11_24_PM.png)
+![Overlapping Content Image Example](images/overlapping_content.png)
 
 Another frequent problem caused by font scaling is **overlapping content** — especially in horizontal layouts. When two pieces of content are laid out horizontally next to each other, it is very common for them to experience overlapping when large font scaling is enabled on the device. As this type of layout is extremely common in mobile apps (e.g. side-by-side buttons, list items, etc), this is a problem that we should be sure to avoid.
 
@@ -52,7 +52,7 @@ val paparazzi = Paparazzi(
 
 Finally, it is always good to try out your app on your own device with various font scaling settings to see how it behaves. While this type of manual testing is time intensive, it can showcase issues that might have been missed in your automated snapshot testing. To change the font scaling setting on your device you can find the options in the accessibility menu in your device’s settings app. Shown below is what the setting looks like on a recent pixel device, however it may appear differently on your device. 
 
-![Page in accessibility settings on a Pixel 8 showing font size controls](attachment:c3d8d7bd-43e0-4c67-95ae-d853e18b9a8e:font_scale_settings_page.png)
+![Page in accessibility settings on a Pixel 8 showing font size controls](images/font_scale_settings_page.png)
 
 Page in accessibility settings on a Pixel 8 showing font size controls
 
