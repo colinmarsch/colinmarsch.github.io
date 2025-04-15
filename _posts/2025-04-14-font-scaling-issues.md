@@ -54,6 +54,4 @@ Finally, it is always good to try out your app on your own device with various f
 
 <img src="{{ site.url }}/images/font_scale_settings_page.png" width="360" height="800">
 
-Page in accessibility settings on a Pixel 8 showing font size controls
-
 Now that we know common issues to watch out for and how to find them within our apps, we are ready to go out there and ensure font scaling works for all of our users! Large font scaling is the most widely used accessibility setting and as a result is one of the highest leverage fixes you can make to your apps to ensure they are accessible for everyone. Happy font scaling!
