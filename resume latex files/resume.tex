@@ -1,0 +1,57 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Page geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Fonts directory (keep as-is if you have the default Awesome-CV fonts)
+\fontdir[fonts/]
+
+% Theme color (blue to match your screenshot)
+\colorlet{awesome}{awesome-skyblue}
+
+% Keep section highlight color on
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% ----------------------- PERSONAL INFORMATION -----------------------
+\name{Colin}{Marsch}
+\position{Android Engineer}
+
+% Contact / links from the screenshot
+% \mobile{}  % (not shown in the screenshot)
+\email{colinmarsch@gmail.com}
+\homepage{colinmarsch.ca}
+\github{colinmarsch}
+\linkedin{colinmarsch}
+\twitter{@colinmarsch}
+% \gitlab{}
+% \stackoverflow{}
+% \skype{}
+% \reddit{}
+% \medium{}
+% \googlescholar{}
+% \extrainfo{}
+
+% Optional quote line — omitted in your screenshot, so leave blank or comment out
+% \quote{""}
+
+\begin{document}
+
+% Header
+\makecvheader[C]
+
+% ----------------------- CONTENT -----------------------
+\input{resume/summary.tex}
+\input{resume/experience.tex}
+\input{resume/presentation.tex}
+\input{resume/education.tex}
+
+% Keep these inputs present but empty (or delete the lines if you prefer)
+% \input{resume/honors.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
+% \input{resume/extracurricular.tex}
+
+\end{document}
