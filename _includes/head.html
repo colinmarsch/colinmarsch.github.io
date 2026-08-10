@@ -8,7 +8,6 @@
   meta_description = page.excerpt | default: site.description | strip_html |
   strip_newlines | truncate: 160 %}
   <meta name="description" content="{{ meta_description | escape }}" />
-  <meta property="og:image" content="{{ site.url }}/public/favicon.ico" />
   <meta property="og:title" content="{{ meta_title | escape }}" />
   <meta
     property="og:type"
@@ -18,7 +17,6 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{{ meta_title | escape }}" />
   <meta name="twitter:description" content="{{ meta_description | escape }}" />
-  <meta name="twitter:image" content="{{ site.url }}/public/favicon.ico" />
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,8 +30,7 @@
   <link rel="stylesheet" href="{{ site.url }}/public/css/syntax.css" />
   <link rel="stylesheet" href="{{ site.url }}/public/css/site.css" />
 
-  <!-- Icons -->
-  <link rel="icon" href="{{ site.url }}/public/favicon.ico" sizes="32x32" />
+  <!-- Icon -->
   <link
     rel="icon"
     href="{{ site.url }}/public/favicon.svg"
