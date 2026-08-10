@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            Colin Marsch 
 tagline:          'Android Engineer'
-description:      ''
+description:      'Android engineer writing about accessibility, software craft, and career growth.'
 url:              https://colinmarsch.ca/
 baseurl:          https://colinmarsch.ca/
 
@@ -19,3 +19,7 @@ author:
 paginate:         5
 
 plugins:          [jekyll-paginate]
+
+# Keep post authoring lightweight: the first paragraph becomes the homepage
+# summary unless a post provides an explicit `excerpt` in its front matter.
+excerpt_separator: "\n\n"

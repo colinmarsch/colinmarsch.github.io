@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ $# -eq 0 ]]; then
+  echo 'Usage: script/new-post "Post title"'
+  exit 1
+fi
+
+title="$*"
+slug=$(printf '%s' "$title" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+|-+$//g')
+post_path="_posts/$(date +%Y-%m-%d)-${slug}.md"
+escaped_title=$(printf '%s' "$title" | sed 's/[\/&]/\\&/g')
+
+if [[ -e "$post_path" ]]; then
+  echo "Post already exists: $post_path"
+  exit 1
+fi
+
+sed "s/Post title/$escaped_title/" _templates/post.md > "$post_path"
+echo "Created $post_path"
