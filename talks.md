@@ -3,7 +3,7 @@ layout: page
 title: Talks
 ---
 
-# 2024
+## 2024
 
 09-19 - **Unpacking Compose Multiplatform Accessibility** - Droidcon NYC ([Video](https://www.droidcon.com/2024/10/17/unpacking-compose-multiplatform-accessibility/), [Slides](https://speakerdeck.com/cmarsch/droidcon-nyc-2024-unpacking-compose-multiplatform-accessibility))
 
@@ -11,7 +11,7 @@ title: Talks
 
 07-30 - **Unpacking Compose Multiplatform Accessibility** - Android Worldwide ([Video](https://www.youtube.com/watch?v=kRekYKQwa4w&list=PLjQD4n5Df70GJg3ljMDhDtFTbdQgjPsm0&index=14), [Slides](https://speakerdeck.com/cmarsch/android-worldwide-july-2024-unpacking-compose-multiplatform-accessibility))
 
-# 2023
+## 2023
 
 09-14 - **Measuring and Improving Performance** - Droidcon NYC ([Video](https://www.droidcon.com/2023/10/06/measuring-and-improving-performance-insights-from-one-of-cash-apps-main-screens/), [Slides](https://speakerdeck.com/cmarsch/measuring-and-improving-performance-insights-from-one-of-cash-apps-main-screens-droidcon-nyc-2023))
 

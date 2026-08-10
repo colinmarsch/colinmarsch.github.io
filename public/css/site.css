@@ -213,7 +213,7 @@ main {
   color: var(--muted);
 }
 
-.post-excerpt p {
+.post-excerpt {
   margin: 0;
 }
 
