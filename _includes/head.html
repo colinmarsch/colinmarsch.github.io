@@ -26,6 +26,50 @@
     {% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}
   </title>
 
+  <!-- Apply the theme before CSS loads to avoid a flash of the wrong theme. -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+      var preference = null;
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") preference = saved;
+      } catch (error) {
+        // Switching still works when browser storage is unavailable.
+      }
+
+      function applyTheme() {
+        var dark = preference ? preference === "dark" : systemTheme.matches;
+        root.setAttribute("data-theme", dark ? "dark" : "light");
+        var toggle = document.getElementById("theme-toggle");
+        if (toggle) toggle.setAttribute("aria-checked", String(dark));
+      }
+
+      applyTheme();
+      systemTheme.addEventListener("change", applyTheme);
+      window.addEventListener("storage", function (event) {
+        if (event.key !== "theme" && event.key !== null) return;
+        preference = event.newValue === "light" || event.newValue === "dark"
+          ? event.newValue : null;
+        applyTheme();
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        var toggle = document.getElementById("theme-toggle");
+        if (!toggle) return;
+        applyTheme();
+        toggle.hidden = false;
+        toggle.addEventListener("click", function () {
+          preference = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          try {
+            localStorage.setItem("theme", preference);
+          } catch (error) {}
+          applyTheme();
+        });
+      });
+    })();
+  </script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.url }}/public/css/syntax.css" />
   <link rel="stylesheet" href="{{ site.url }}/public/css/site.css?v={{ site.time | date: '%s' }}" />

@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --background: #fbfbfa;
   --surface: #f3f3f0;
   --foreground: #1d1d1b;
@@ -14,7 +14,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --background: #171816;
     --surface: #20221f;
     --foreground: #ecece7;
@@ -23,6 +24,17 @@
     --accent: #8bc8ba;
     --code-background: #252724;
   }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #171816;
+  --surface: #20221f;
+  --foreground: #ecece7;
+  --muted: #aaa99f;
+  --border: #373934;
+  --accent: #8bc8ba;
+  --code-background: #252724;
 }
 
 * {
@@ -95,7 +107,7 @@ hr {
 
 .site-header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 2rem;
   min-height: 5.5rem;
@@ -115,6 +127,66 @@ hr {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.25rem;
+}
+
+.site-nav {
+  align-items: center;
+}
+
+.theme-toggle {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-around;
+  width: 80px;
+  height: 44px;
+  padding: 4px;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.theme-toggle[hidden] {
+  display: none;
+}
+
+.theme-toggle:hover {
+  border-color: var(--muted);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.theme-toggle-thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--background);
+  box-shadow: 0 1px 3px #0002;
+  transition: transform 160ms ease;
+}
+
+.theme-toggle[aria-checked="true"] .theme-toggle-thumb {
+  transform: translateX(36px);
+}
+
+.theme-toggle svg {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+.theme-toggle[aria-checked="false"] .theme-toggle-sun,
+.theme-toggle[aria-checked="true"] .theme-toggle-moon {
+  color: var(--foreground);
 }
 
 .site-nav a,
@@ -433,6 +505,7 @@ td {
 @media (max-width: 23rem) {
   .site-nav {
     justify-content: flex-start;
+    gap: 0.5rem 0.75rem;
   }
 
   .related-posts article {
@@ -446,6 +519,10 @@ td {
   *::before,
   *::after {
     scroll-behavior: auto !important;
+  }
+
+  .theme-toggle-thumb {
+    transition: none;
   }
 }
 
