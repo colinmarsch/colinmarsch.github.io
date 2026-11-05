@@ -141,25 +141,12 @@ main {
   min-height: 60vh;
 }
 
-.intro {
-  max-width: 47rem;
-  padding: clamp(3.5rem, 9vw, 7rem) 0 clamp(3rem, 7vw, 5rem);
+.posts {
+  padding-top: 3rem;
 }
 
-.intro h1 {
-  max-width: 43rem;
-  margin: 0 0 1rem;
-  font-size: clamp(2rem, 5vw, 3.6rem);
-  font-weight: 650;
-  line-height: 1.12;
-  letter-spacing: -0.035em;
-}
-
-.intro p {
-  max-width: 35rem;
-  margin: 0;
-  color: var(--muted);
-  font-size: 1.1rem;
+.posts > .section-title {
+  margin-bottom: 1.333333rem;
 }
 
 .section-title,
@@ -187,20 +174,20 @@ main {
   white-space: nowrap;
 }
 
-.post-summary h3,
+.post-summary h2,
 .related-posts h3 {
   margin: -0.2rem 0 0.5rem;
   font-size: 1.3rem;
   line-height: 1.35;
 }
 
-.post-summary h3 a,
+.post-summary h2 a,
 .related-posts h3 a {
   color: var(--foreground);
   text-decoration: none;
 }
 
-.post-summary h3 a:hover,
+.post-summary h2 a:hover,
 .related-posts h3 a:hover {
   color: var(--accent);
 }
@@ -423,8 +410,8 @@ td {
     gap: 0.5rem;
   }
 
-  .intro {
-    padding: 3.5rem 0 3rem;
+  .posts {
+    padding-top: 2.352941rem;
   }
 
   .post-summary {
@@ -433,7 +420,7 @@ td {
     padding: 1.6rem 0;
   }
 
-  .post-summary h3 {
+  .post-summary h2 {
     margin-top: 0;
   }
 

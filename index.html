@@ -3,18 +3,8 @@ layout: default
 title: Home
 ---
 
-<section class="intro" aria-labelledby="intro-title">
-  <h1 id="intro-title">
-    Android engineer writing about accessibility, software craft, and career
-    growth.
-  </h1>
-  <p>
-    I build thoughtful mobile experiences and share what I learn along the way.
-  </p>
-</section>
-
 <section class="posts" aria-labelledby="writing-title">
-  <h2 class="section-title" id="writing-title">Latest writing</h2>
+  <h1 class="section-title" id="writing-title">Latest writing</h1>
 
   {% for post in paginator.posts %}
   <article class="post-summary">
@@ -22,7 +12,7 @@ title: Home
       >{{ post.date | date: '%b %-d, %Y' }}</time
     >
     <div>
-      <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
       <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 42 }}</p>
       {% if post.tags.size > 0 %}
       <ul class="tag-list" aria-label="Topics">
